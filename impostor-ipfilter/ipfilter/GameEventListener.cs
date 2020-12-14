@@ -28,7 +28,7 @@ namespace IpFilter
                 await Task.Delay(1000);
                 var clientIp = e.Game.Host.Client.Connection.EndPoint.Address.ToString();
                 if (IsClientBlockedFromCreatingLobbies(clientIp)) {
-                    _logger.LogInformation($"Player {e.Game.Host.Character.PlayerInfo.PlayerName} with IP: {e.Game.Host.Client.Connection.EndPoint.Address} triedto create a game lobby");
+                    _logger.LogInformation($"Player {e.Game.Host.Character.PlayerInfo.PlayerName} with IP: {e.Game.Host.Client.Connection.EndPoint.Address} tried to create a game lobby");
                     await e.Game.Host.Client.DisconnectAsync(DisconnectReason.Custom, IpFilterSettings.BlockedMessage);
                 }
             });
