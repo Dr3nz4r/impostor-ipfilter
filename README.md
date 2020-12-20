@@ -7,10 +7,20 @@ Please do feel free to fork, star or contribute! Any additions, issues or PRs ar
 to configure the allow and blocklist use the following snippet and place it in your config.json.
 
 ```json
-"IpFilter": {
-	"BlockedMessage": "You are not allowed to create lobbies.",
-	"AllowListEnabled": false,
-	"BlockListEnabled": false,
+{
+  "Server": {
+    "PublicIp": "127.0.0.1",
+    "PublicPort": 22023,
+    "ListenIp": "0.0.0.0",
+    "ListenPort": 22023
+  },
+  "AntiCheat": {
+    "BanIpFromGame": true
+  },
+  "IpFilter": {
+	"BlockedMessage": "You are not permitted to create a lobby! Bugger off!",
+	"AllowListEnabled": true,
+	"BlockListEnabled": true,
 	"Allowed": [
 		"123.123.123.123",
 		"123.123.123.123",
@@ -21,6 +31,7 @@ to configure the allow and blocklist use the following snippet and place it in y
 		"123.123.123.123",
 		[...]
 	]
+  }
 }
 ```
 
