@@ -11,8 +11,16 @@ to configure the allow and blocklist use the following snippet and place it in y
 	"BlockedMessage": "You are not allowed to create lobbies.",
 	"AllowListEnabled": false,
 	"BlockListEnabled": false,
-	"Allowed": [],
-	"Blocked": []
+	"Allowed": [
+		"123.123.123.123",
+		"123.123.123.123",
+		[...]
+	],
+	"Blocked": [
+		"123.123.123.123",
+		"123.123.123.123",
+		[...]
+	]
 }
 ```
 
