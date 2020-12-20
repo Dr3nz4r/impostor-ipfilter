@@ -24,12 +24,12 @@ to configure the allow and blocklist use the following snippet and place it in y
 	"Allowed": [
 		"123.123.123.123",
 		"123.123.123.123",
-		[...]
+		...
 	],
 	"Blocked": [
 		"123.123.123.123",
 		"123.123.123.123",
-		[...]
+		...
 	]
   }
 }
