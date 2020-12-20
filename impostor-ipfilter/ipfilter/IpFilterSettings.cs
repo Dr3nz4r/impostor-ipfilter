@@ -9,12 +9,14 @@ namespace IPFilter
         public List<string> Allowed { get; set; }
         public List<string> Blocked { get; set; }
         public string BlockedMessage { get; set; }
+        public int IPCheckDelay { get; set; }
 
 
         public IPFilterSettings() {
             Allowed = new List<string>();
             Blocked = new List<string>();
             BlockedMessage = "You are not allowed to create lobbies.";
+            IPCheckDelay = 5;
         }
     }
 }

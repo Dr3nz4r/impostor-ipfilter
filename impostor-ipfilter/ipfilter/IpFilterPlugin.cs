@@ -35,7 +35,7 @@ namespace IPFilter
                 .Build()
                 .Bind("IPFilter", ipFilterSettings);
 
-            _logger.LogInformation($"IpFilter Plugin status" +
+            _logger.LogInformation($"IPFilter Plugin status" +
                 $"\n\tBlocklist: {(ipFilterSettings.BlockListEnabled ? "on" : "off")}" +
                 $"\n\tAllowlist: {(ipFilterSettings.AllowListEnabled ? "on" : "off")}");
         }
