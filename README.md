@@ -23,13 +23,11 @@ to configure the allow and blocklist use the following snippet and place it in y
 	"BlockListEnabled": true,
 	"Allowed": [
 		"123.123.123.123",
-		"123.123.123.123",
-		...
+		"123.123.123.123"
 	],
 	"Blocked": [
 		"123.123.123.123",
-		"123.123.123.123",
-		...
+		"123.123.123.123"
 	]
   }
 }
