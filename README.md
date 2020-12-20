@@ -18,7 +18,8 @@ to configure the allow- and blocklist use the following example config.json
   "AntiCheat": {
     "BanIpFromGame": true
   },
-  "IpFilter": {
+  "IPFilter": {
+	"IPCheckDelay": 2,
 	"BlockedMessage": "You are not permitted to create a lobby! Bugger off!",
 	"AllowListEnabled": true,
 	"BlockListEnabled": true,
@@ -33,6 +34,11 @@ to configure the allow- and blocklist use the following example config.json
   }
 }
 ```
+
+Explanation:
+
+IPCheckDelay - how long to wait before validation the lobby against the allow and block list (time in seconds after lobby creation)
+BlockedMessage - message to display when a lobby is forcefully closed
 
 
 # notes
