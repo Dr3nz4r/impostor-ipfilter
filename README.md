@@ -4,7 +4,8 @@ A plugin for the impostor among us server to prevent lobby creation for either b
 Please do feel free to fork, star or contribute! Any additions, issues or PRs are greatly welcome!
 
 # configuration
-to configure the allow and blocklist use the following snippet and place it in your config.json.
+to configure the allow- and blocklist use the following example config.json
+
 
 ```json
 {
@@ -32,6 +33,7 @@ to configure the allow and blocklist use the following snippet and place it in y
   }
 }
 ```
+
 
 # notes
 `Allowed` and `Blocked` are lists of strings and accept any sort of IP v4 addresses in the following notation: xxx.xxx.xxx.xxx
