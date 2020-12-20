@@ -33,7 +33,7 @@ namespace IPFilter
             new ConfigurationBuilder()
                 .AddJsonFile("config.json", optional: false, reloadOnChange: false)
                 .Build()
-                .Bind("IpFilter", ipFilterSettings);
+                .Bind("IPFilter", ipFilterSettings);
 
             _logger.LogInformation($"IpFilter Plugin status" +
                 $"\n\tBlocklist: {(ipFilterSettings.BlockListEnabled ? "on" : "off")}" +

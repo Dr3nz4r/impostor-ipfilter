@@ -20,7 +20,7 @@ namespace IPFilter
                 return true;
             }
 
-            if (IpFilterSettings.AllowListEnabled && IpFilterSettings.Allowed.Contains(clientIp)) {
+            if (IpFilterSettings.AllowListEnabled && IpFilterSettings.Allowed.Contains(clientIp) == false) {
                 return true;
             }
 
@@ -32,7 +32,7 @@ namespace IPFilter
         {
             Task.Run(async () =>
             {
-                await Task.Delay(1000);
+                await Task.Delay(2500);
                 var clientIp = e.Game.Host.Client.Connection.EndPoint.Address.ToString();
                 if (IsClientBlockedFromCreatingLobbies(clientIp)) {
                     _logger.LogInformation($"Player {e.Game.Host.Character.PlayerInfo.PlayerName} with IP: {e.Game.Host.Client.Connection.EndPoint.Address} tried to create a game lobby");
