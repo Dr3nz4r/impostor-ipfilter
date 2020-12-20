@@ -9,22 +9,22 @@ using System.IO;
 using Microsoft.Extensions.Configuration;
 using System.Linq;
 
-namespace IpFilter
+namespace IPFilter
 {
     [ImpostorPlugin(
         package: "de.dr3n.ipfilter",
         name: "IP Filter",
         author: "Dr3nz4r",
         version: "1.0.0")]
-    public class IpFilterPlugin : PluginBase
+    public class IPFilterPlugin : PluginBase
     {
-        readonly ILogger<IpFilterPlugin> _logger;
+        readonly ILogger<IPFilterPlugin> _logger;
         readonly IEventManager _eventManager;
         IDisposable _unregister;
 
-        internal static IpFilterSettings ipFilterSettings = new IpFilterSettings();
+        internal static IPFilterSettings ipFilterSettings = new IPFilterSettings();
 
-        public IpFilterPlugin(ILogger<IpFilterPlugin> logger, IEventManager eventManager)
+        public IPFilterPlugin(ILogger<IPFilterPlugin> logger, IEventManager eventManager)
         {
             _logger = logger;
             _eventManager = eventManager;

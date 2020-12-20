@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IpFilter", "ipfilter\IpFilter.csproj", "{99074EBC-7481-488E-87A8-B603BC27075C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IPFilter", "ipfilter\IPFilter.csproj", "{99074EBC-7481-488E-87A8-B603BC27075C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace IpFilter
+namespace IPFilter
 {
-    class IpFilterSettings
+    class IPFilterSettings
     {
         public bool AllowListEnabled { get; set; }
         public bool BlockListEnabled { get; set; }
@@ -11,7 +11,7 @@ namespace IpFilter
         public string BlockedMessage { get; set; }
 
 
-        public IpFilterSettings() {
+        public IPFilterSettings() {
             Allowed = new List<string>();
             Blocked = new List<string>();
             BlockedMessage = "You are not allowed to create lobbies.";

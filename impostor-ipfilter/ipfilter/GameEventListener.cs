@@ -4,14 +4,14 @@ using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace IpFilter
+namespace IPFilter
 {
     public class GameEventListener : IEventListener
     {
-        readonly ILogger<IpFilterPlugin> _logger;
-        private IpFilterSettings IpFilterSettings => IpFilterPlugin.ipFilterSettings;
+        readonly ILogger<IPFilterPlugin> _logger;
+        private IPFilterSettings IpFilterSettings => IPFilterPlugin.ipFilterSettings;
 
-        public GameEventListener(ILogger<IpFilterPlugin> logger) { 
+        public GameEventListener(ILogger<IPFilterPlugin> logger) { 
             _logger = logger;
         }
 
